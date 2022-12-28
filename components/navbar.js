@@ -7,6 +7,7 @@ class NavBar extends HTMLElement {
         let lang = this.classList[1];
         let is_en = lang == 'en';
         this.innerHTML = `
+            <link rel="stylesheet" href="/css/navbar.css" />
             <nav>
               <img src="/static/images/website/${is_en ? 'logo-black-en.png' : 'logo-black.png'}" />
               <input type="checkbox" id="check" />
@@ -21,7 +22,7 @@ class NavBar extends HTMLElement {
                 <li><a href="/about/?lang=${lang}">
                     ${is_en ? 'ABOUT' : '展覽論述'}
                 </a></li>
-                <li><a href="/artists/?lang=${lang}">
+                <li><a href="/artist/?lang=${lang}">
                     ${is_en ? 'ARTIST' : '創作者'}
                 </a></li>
                 <li><a href="/map/?lang=${lang}">
