@@ -1,0 +1,127 @@
+nav {
+  width: 100%;
+  height: 80px;
+  background-color: hsla(0, 0%, 40%, 0.7);
+  position: fixed;
+}
+
+nav img {
+  width: 200px;
+  position: absolute;
+  top: 8px;
+  left: 10%;
+}
+
+nav ul {
+  float: right;
+  margin-right: 25px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  position: relative;
+  color: rgb(0, 0, 0); /*Text color*/
+  font-size: 18px;
+  padding: 5px 0; /*線條距離*/
+  text-transform: uppercase;
+}
+
+nav ul li a:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: rgb(0, 0, 0); /*Line color*/
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s linear;
+}
+
+nav ul li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+label #btn,
+label #cancel {
+  color: rgb(0, 0, 0); /*漢堡圖示顏色*/
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 1118px) {
+  nav img {
+    left: 8%;
+  }
+}
+
+@media (max-width: 944px) {
+  nav img {
+    left: 6%;
+    top: 19px;
+    width: 130px;
+  }
+
+  nav ul li a {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 860px) {
+  label #btn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: hsla(0, 0%, 80%, 0.5); /* 手機板選單背景 */
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  #check:checked ~ label #btn {
+    display: none;
+  }
+
+  #check:checked ~ label #cancel {
+    display: block;
+  }
+}
+
+@font-face {
+  font-family: "Cubic 11";
+  src: url("/static/fonts/Cubic_11_1.013_R.woff") format("woff");
+}
