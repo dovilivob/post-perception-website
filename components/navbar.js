@@ -9,7 +9,9 @@ class NavBar extends HTMLElement {
         this.innerHTML = `
             <link rel="stylesheet" href="/css/navbar.css" />
             <nav>
-              <img src="/static/images/website/${is_en ? 'logo-black-en.png' : 'logo-black.png'}" />
+              <!-- <img src="/static/images/website/${is_en ? 'logo-black-en.png' : 'logo-black.png'}" /> -->
+
+              <a href="/home?lang=${lang}" id="header-title">${is_en ? 'Post-Perception' : '後知後覺後'}</a>
 
               <input type="checkbox" id="check" />
               <label for="check">
