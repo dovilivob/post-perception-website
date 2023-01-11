@@ -5,11 +5,18 @@ nav {
   position: fixed;
 }
 
-nav img {
-  width: 200px;
+nav #header-title {
+  color: white;
+  font-size: 50px;
   position: absolute;
-  top: 8px;
-  left: 10%;
+  top: 12px;
+  left: 1%;
+  font-style: normal;
+}
+
+nav #header-title:hover {
+  color: rgb(0, 0, 0);
+  transition: 0.2s ease-in-out;
 }
 
 nav ul {
@@ -64,17 +71,11 @@ label #cancel {
   display: none;
 }
 
-@media (max-width: 1118px) {
-  nav img {
-    left: 8%;
-  }
-}
-
 @media (max-width: 944px) {
   nav img {
-    left: 6%;
-    top: 19px;
-    width: 130px;
+    left: 4%;
+    top: 23px;
+    font-size: 30px;
   }
 
   nav ul li a {
