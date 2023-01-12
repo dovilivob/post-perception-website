@@ -4,7 +4,7 @@ const info_json =
         "exhibition": {},
         "art_teams": [
             {
-                "id": 1,
+                "id": 0,
                 "artists": [
                     {
                         "name": "莊恩齊",
@@ -37,7 +37,7 @@ const info_json =
                 }
             },
             {
-                "id": 2,
+                "id": 1,
                 "artists": [
                     {
                         "name": "王暉蒽",
@@ -80,7 +80,7 @@ const info_json =
                 }
             },
             {
-                "id": 3,
+                "id": 2,
                 "artists": [
                     {
                         "name": "胡品孜",
@@ -118,7 +118,7 @@ const info_json =
                 }
             },
             {
-                "id": 4,
+                "id": 3,
                 "artists": [
                     {
                         "name": "楊茗柯",
@@ -161,7 +161,7 @@ const info_json =
                 }
             },
             {
-                "id": 5,
+                "id": 4,
                 "artists": [
                     {
                         "name": "高哲淯",
@@ -184,7 +184,7 @@ const info_json =
                 }
             },
             {
-                "id": 6,
+                "id": 5,
                 "artists": [
                     {
                         "name": "陳誌陽",
@@ -222,7 +222,7 @@ const info_json =
                 }
             },
             {
-                "id": 7,
+                "id": 6,
                 "artists": [
                     {
                         "name": "朱紹筠",
@@ -250,7 +250,7 @@ const info_json =
                 }
             },
             {
-                "id": 8,
+                "id": 7,
                 "artists": [
                     {
                         "name": "丁常恩",
@@ -273,7 +273,7 @@ const info_json =
                 }
             },
             {
-                "id": 9,
+                "id": 10,
                 "artists": [
                     {
                         "name": "周詩涵",
@@ -291,7 +291,7 @@ const info_json =
                 }
             },
             {
-                "id": 10,
+                "id": 9,
                 "artists": [
                     {
                         "name": "余宗霖",
@@ -309,7 +309,7 @@ const info_json =
                 }
             },
             {
-                "id": 11,
+                "id": 10,
                 "artists": [
                     {
                         "name": "許睿智",
@@ -327,7 +327,7 @@ const info_json =
                 }
             },
             {
-                "id": 12,
+                "id": 11,
                 "artists": [
                     {
                         "name": "潘玟瑜",
@@ -345,7 +345,7 @@ const info_json =
                 }
             },
             {
-                "id": 13,
+                "id": 12,
                 "artists": [
                     {
                         "name": "林琮澔",
@@ -365,7 +365,7 @@ const info_json =
         ],
         "admins": [
             {
-                "id": 1,
+                "id": 0,
                 "department": "總召",
                 "members": [
                     {
@@ -381,7 +381,7 @@ const info_json =
                 ]
             },
             {
-                "id": 2,
+                "id": 1,
                 "department": "文書",
                 "members": [
                     {
@@ -397,7 +397,7 @@ const info_json =
                 ]
             },
             {
-                "id": 3,
+                "id": 2,
                 "department": "總務",
                 "members": [
                     {
@@ -408,7 +408,7 @@ const info_json =
                 ]
             },
             {
-                "id": 4,
+                "id": 3,
                 "department": "翻譯",
                 "members": [
                     {
@@ -424,7 +424,7 @@ const info_json =
                 ]
             },
             {
-                "id": 5,
+                "id": 4,
                 "department": "視覺組",
                 "members": [
                     {
@@ -470,7 +470,7 @@ const info_json =
                 ]
             },
             {
-                "id": 6,
+                "id": 5,
                 "department": "公關組",
                 "members": [
                     {
@@ -506,7 +506,7 @@ const info_json =
                 ]
             },
             {
-                "id": 7,
+                "id": 6,
                 "department": "活動組",
                 "members": [
                     {
@@ -537,7 +537,7 @@ const info_json =
                 ]
             },
             {
-                "id": 8,
+                "id": 7,
                 "department": "佈展組",
                 "members": [
                     {
@@ -573,7 +573,7 @@ const info_json =
                 ]
             },
             {
-                "id": 9,
+                "id": 8,
                 "department": "事務組",
                 "members": [
                     {
@@ -599,7 +599,7 @@ const info_json =
                 ]
             },
             {
-                "id": 10,
+                "id": 9,
                 "department": "紀錄組",
                 "members": [
                     {
@@ -620,7 +620,7 @@ const info_json =
                 ]
             },
             {
-                "id": 11,
+                "id": 10,
                 "department": "網頁組",
                 "members": [
                     {
