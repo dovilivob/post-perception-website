@@ -23,17 +23,17 @@ class NavBar extends HTMLElement {
               <ul>
                 <li>
                     <a href="/home/?lang=${lang}">
-                        ${is_en ? 'HOME' : '首頁'}
+                        ${is_en ? 'home' : '首頁'}
                     </a>
                 </li>
                 <li>
                     <a href="/about/?lang=${lang}">
-                        ${is_en ? 'ABOUT' : '展覽論述'}
+                        ${is_en ? 'about' : '展覽資訊'}
                     </a>
                 </li>
                 <li>
                     <a href="/members/?lang=${lang}">
-                        ${is_en ? 'MEMBERS' : '參展人員'}
+                        ${is_en ? 'members' : '參展人員'}
                     </a>
                 </li>
                 <li>
@@ -42,8 +42,8 @@ class NavBar extends HTMLElement {
                     </a>
                 </li>
                 <li>
-                    <a href="/contact/?lang=${lang}">
-                        ${is_en ? 'CONTACT' : '聯繫我們'}
+                    <a href="/record/?lang=${lang}">
+                        ${is_en ? 'record' : '展覽紀錄'}
                     </a>
                 </li>
 
