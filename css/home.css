@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: "Cubic 11";
   color: white;
+  overflow: hidden;
 }
 
 canvas {
