@@ -9,8 +9,6 @@ class NavBar extends HTMLElement {
         this.innerHTML = `
             <link rel="stylesheet" href="/css/navbar.css" />
             <nav>
-              <!-- <img src="/static/images/website/${is_en ? 'logo-black-en.png' : 'logo-black.png'}" /> -->
-
               <a href="/home?lang=${lang}" id="header-title">${is_en ? 'Post-Perception' : '後知後覺後'}</a>
 
               <input type="checkbox" id="check" />
@@ -31,13 +29,13 @@ class NavBar extends HTMLElement {
                     </a>
                 </li>
                 <li>
-                    <a href="/artist/?lang=${lang}">
-                        ${is_en ? 'ARTIST' : '創作者'}
+                    <a href="/members/?lang=${lang}">
+                        ${is_en ? 'MEMBERS' : '參展人員'}
                     </a>
                 </li>
                 <li>
-                    <a href="/map/?lang=${lang}">
-                        ${is_en ? 'MAP' : '會場地圖'}
+                    <a href="/artworks/?lang=${lang}">
+                        ${is_en ? 'artworks' : '作品'}
                     </a>
                 </li>
                 <li>
