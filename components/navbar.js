@@ -1,13 +1,16 @@
+
 class NavBar extends HTMLElement {
     constructor() {
         super();
     }
 
     connectedCallback() {
-        let lang = this.classList[1];
+        const URL_search = new URLSearchParams(window.location.search);
+        let lang = URL_search.get('lang');
         let is_en = lang == 'en';
         this.innerHTML = `
             <link rel="stylesheet" href="/css/navbar.css" />
+            <div id="fading-bg"></div>
             <nav>
               <a href="/home?lang=${lang}" id="header-title">${is_en ? 'Post-Perception' : '後知後覺後'}</a>
 

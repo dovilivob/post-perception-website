@@ -1,0 +1,28 @@
+.members-container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.members-container > div {
+  margin: 10px;
+  padding: 30px;
+}
+
+.name-info-container {
+  color: white;
+  margin: auto;
+}
+
+#big-title {
+  text-align: left;
+  padding-left: 60px;
+  font-size: 100px;
+  color: white;
+}
+
+.sep-line {
+  width: 80%;
+  background: linear-gradient(to right, white, black);
+}

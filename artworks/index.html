@@ -4,17 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MAP</title>
+    <title>ARTWORK</title>
     <link rel="stylesheet" href="/css/main.css" />
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </head>
   <body>
     <navbar-component class="language-changeable"></navbar-component>
-    <main>
-      <h1>This is Map Page</h1>
-    </main>
-    <script src="/js/get_info.js"></script>
+    <main></main>
+    <script>
+      const URL_search = new URLSearchParams(window.location.search);
+      const work_id = URL_search.get("id");
+      const artwork = document.createElement("artwork-component");
+      artwork.className = `language-changeable ${work_id}`;
+      document.querySelector("main").appendChild(artwork);
+    </script>
     <script src="/components/navbar.js"></script>
+    <script src="/components/head_photo.js" type="module"></script>
+    <script src="/components/artwork.js" type="module"></script>
   </body>
 </html>

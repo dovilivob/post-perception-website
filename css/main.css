@@ -12,7 +12,6 @@ body {
   font-family: "Cubic 11";
   background-color: hsl(0, 0%, 13%);
 }
-
 main {
-  padding-top: 80px;
+  padding-top: 10rem;
 }

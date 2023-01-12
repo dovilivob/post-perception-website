@@ -4,9 +4,12 @@ class HeadPhoto extends HTMLElement {
     }
 
     connectedCallback() {
-        let image_num = this.classList[0];
+        let image_id = this.classList[0];
         this.innerHTML = `
             <link rel="stylesheet" href="/css/head_photo.css" />
+            <div class="image-container">
+                <img class="head-image" src="/static/images/exhibition/head_photos/${image_id}.jpg" />
+            </div>
         `;
     }
 }
