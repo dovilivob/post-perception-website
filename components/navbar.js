@@ -6,13 +6,13 @@ class NavBar extends HTMLElement {
 
     connectedCallback() {
         const URL_search = new URLSearchParams(window.location.search);
-        let lang = URL_search.get('lang');
+        let lang = URL_search.get('lang') ?? 'zh';
         let is_en = lang == 'en';
         this.innerHTML = `
             <link rel="stylesheet" href="/css/navbar.css" />
             <div id="fading-bg"></div>
             <nav>
-              <a href="/home?lang=${lang}" id="header-title">${is_en ? 'Post-Perception' : '後知後覺後'}</a>
+              <a href="/home/?lang=${lang}" id="header-title">${is_en ? 'Post-Perception' : '後知後覺後'}</a>
 
               <input type="checkbox" id="check" />
               <label for="check">
