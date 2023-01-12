@@ -13,13 +13,20 @@
     <main></main>
     <script>
       const URL_search = new URLSearchParams(window.location.search);
-      const work_id = URL_search.get("id");
-      const artwork = document.createElement("artwork-component");
-      artwork.className = `language-changeable ${work_id}`;
-      document.querySelector("main").appendChild(artwork);
+      const artwork_id = parseInt(URL_search.get("id"));
+      const have_id = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].includes(artwork_id);
+      if (have_id) {
+        const artwork = document.createElement("artwork-component");
+        artwork.className = `language-changeable ${artwork_id}`;
+        document.querySelector("main").appendChild(artwork);
+      } else {
+        const artworks = document.createElement("list-all-artworks");
+        document.querySelector("main").appendChild(artworks);
+      }
     </script>
     <script src="/components/navbar.js"></script>
     <script src="/components/head_photo.js" type="module"></script>
     <script src="/components/artwork.js" type="module"></script>
+    <script src="/components/artworks.js" type="module"></script>
   </body>
 </html>
