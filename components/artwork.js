@@ -5,35 +5,46 @@ class Artwork extends HTMLElement {
     }
 
     connectedCallback() {
-        let artwork_id = parseInt(this.classList[1]);
+        // Get artwork ID from HTML element's class
+        const artwork_id = parseInt(this.classList[1]);
+        // Get team information
         const team_info = information.art_teams[artwork_id];
+        // Get school IDs list
+        const school_ids = information.school_ids;
+        // Get artwork title
+        const title = team_info.title;
+        // Get artwork description
+        const description = team_info.description;
+        // Get artwork media list
+        const media_list = team_info.media;
+        // Get artwork record videos/images
+        const record = team_info.record;
+        // Declare member as void string for pushing content in next step
         let members = ``;
-        let title = team_info.title;
-        let description = team_info.description;
-        let media = team_info.media;
-        let record = team_info.record;
-        for (let member of team_info.artists) {
+
+        // Put every member's { photo, name, title } in $members
+        for (let member of team_info.members) {
             members += `
             <div>
-                <head-photo-component class="${member.img_id}"></head-photo-component> 
-                <div class='white-font name-info-container'">
+                <head-photo-component class="${school_ids[member.name]}"></head-photo-component> 
+                <div class='white-font name-title-container'">
                     <h3>${member.name}</h3>
                     <h4>${member.title}</h4>
                 </div>
             </div>
             `;
         }
+
+        // Write HTML
         this.innerHTML = `
             <div id="main-container">
                 <h1 class="white-font" id="big-title">${title}</h1>
-                <div class="" id="main-image-container">
-                    <img id="main-image" src="/static/images/exhibition/artwork_photos/${record.images[0]}.jpg"/> 
-                </div>
-                <h2 class="white-font sub-title">團隊成員</h2> 
                 <div id="members-container">
                     ${members}
                 </div>
-                <h2 class="white-font sub-title">作品論述</h2> 
+                <div class="" id="main-image-container">
+                    <img id="main-image" src="/static/images/exhibition/artwork_photos/${record.images[0]}.jpg"/> 
+                </div>
                 <div class="white-font" id="description-container">
                     <article id="description">${description}</article> 
                 </div>
