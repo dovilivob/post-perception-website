@@ -1,29 +1,69 @@
 const info_json = {
     zh: {
+        school_ids: {
+            "白維田": 1,
+            "蒲欣妤": 2,
+            "許睿智": 3,
+            "朱紹筠": 4,
+            "張珈瑄": 6,
+            "吳黛葳": 5,
+            "高哲淯": 7,
+            "蔡尚騰": 8,
+            "翁國愷": 10,
+            "葉志翔": 11,
+            "張沛晴": 13,
+            "李頡": 14,
+            "余宗霖": 15,
+            "蔡政澔": 16,
+            "唐昱翔": 17,
+            "潘文瑜": 18,
+            "廖婉淩": 19,
+            "江愷希": 20,
+            "莊恩齊": 21,
+            "陳政維": 22,
+            "吳佩純": 23,
+            "何晨瑜": 24,
+            "陳妍姍": 25,
+            "林琮澔": 26,
+            "陳誌陽": 27,
+            "魏惇儀": 28,
+            "簡祐呈": 29,
+            "林慧儒": 30,
+            "徐浩瀚": 31,
+            "邱傑義": 32,
+            "韓承芯": 33,
+            "劉吉榮": 34,
+            "楊茗柯": 35,
+            "胡品孜": 36,
+            "李士朋": 37,
+            "王嘉郁": 38,
+            "丁常恩": 39,
+            "王暉蒽": 40,
+            "朱亦萱": 42,
+            "蘇乃俞": 58,
+            "林珈誼": 59,
+            "周詩涵": 60,
+        },
         exhibition: {},
         art_teams: [
             {
                 id: 0,
-                artists: [
+                members: [
                     {
                         name: "莊恩齊",
                         title: "組長",
-                        img_id: 0
                     },
                     {
                         name: "陳政維",
                         title: "3D 建模、動畫設計",
-                        img_id: 1
                     },
                     {
                         name: "邱傑義",
                         title: "網頁程式設計",
-                        img_id: 2
                     },
                     {
                         name: "劉吉榮",
                         title: "3D 互動設計",
-                        img_id: 3
                     }
                 ],
                 title: "弗朗提爾貳號",
@@ -37,36 +77,30 @@ const info_json = {
             },
             {
                 id: 1,
-                artists: [
+                members: [
                     {
                         name: "王暉蒽",
                         title: "",
-                        img_id: 0
                     },
                     {
                         name: "徐浩瀚",
                         title: "",
-                        img_id: 0
                     },
                     {
                         name: "朱亦萱",
                         title: "",
-                        img_id: 0
                     },
                     {
                         name: "蒲欣妤",
                         title: "",
-                        img_id: 0
                     },
                     {
                         name: "唐昱翔",
                         title: "",
-                        img_id: 0
                     },
                     {
                         name: "蔡尚騰",
                         title: "",
-                        img_id: 0
                     }
                 ],
                 title: "展間．魅影",
@@ -80,31 +114,26 @@ const info_json = {
             },
             {
                 id: 2,
-                artists: [
+                members: [
                     {
                         name: "胡品孜",
                         title: "",
-                        img_id: 0
                     },
                     {
                         name: "廖婉凌",
                         title: "",
-                        img_id: 0
                     },
                     {
                         name: "白維田",
                         title: "",
-                        img_id: 0
                     },
                     {
                         name: "吳佩純",
                         title: "",
-                        img_id: 0
                     },
                     {
                         name: "吳黛葳",
                         title: "",
-                        img_id: 0
                     }
                 ],
                 title: "無題",
@@ -118,36 +147,30 @@ const info_json = {
             },
             {
                 id: 3,
-                artists: [
+                members: [
                     {
                         name: "楊茗柯",
                         title: "",
-                        img_id: 0
                     },
                     {
                         name: "李 頡",
                         title: "",
-                        img_id: 0
                     },
                     {
                         name: "林珈誼",
                         title: "",
-                        img_id: 0
                     },
                     {
                         name: "李士朋",
                         title: "",
-                        img_id: 0
                     },
                     {
                         name: "韓承芯",
                         title: "",
-                        img_id: 0
                     },
                     {
                         name: "林慧儒",
                         title: "",
-                        img_id: 0
                     }
                 ],
                 title: "!Virtual",
@@ -161,16 +184,14 @@ const info_json = {
             },
             {
                 id: 4,
-                artists: [
+                members: [
                     {
                         name: "高哲淯",
                         title: "",
-                        img_id: 0
                     },
                     {
                         name: "簡祐呈",
                         title: "",
-                        img_id: 0
                     }
                 ],
                 title: "定急",
@@ -184,31 +205,27 @@ const info_json = {
             },
             {
                 id: 5,
-                artists: [
+                members: [
                     {
                         name: "陳誌陽",
                         title: "",
-                        img_id: 0
                     },
                     {
                         name: "陳妍姍",
                         title: "",
-                        img_id: 0
                     },
                     {
                         name: "江愷希",
                         title: "",
-                        img_id: 0
+
                     },
                     {
                         name: "張珈瑄",
                         title: "",
-                        img_id: 0
                     },
                     {
                         name: "蘇乃俞",
                         title: "",
-                        img_id: 0
                     }
                 ],
                 title: "夢尼瑪",
@@ -222,21 +239,18 @@ const info_json = {
             },
             {
                 id: 6,
-                artists: [
+                members: [
                     {
                         name: "朱紹筠",
                         title: "",
-                        img_id: 0
                     },
                     {
                         name: "王嘉郁",
                         title: "",
-                        img_id: 0
                     },
                     {
                         name: "翁國愷",
                         title: "",
-                        img_id: 0
                     }
                 ],
                 title: "呼吸＿集",
@@ -250,16 +264,14 @@ const info_json = {
             },
             {
                 id: 7,
-                artists: [
+                members: [
                     {
                         name: "丁常恩",
                         title: "",
-                        img_id: 0
                     },
                     {
                         name: "蔡政澔",
                         title: "",
-                        img_id: 0
                     }
                 ],
                 title: "燈火闌珊處",
@@ -273,11 +285,10 @@ const info_json = {
             },
             {
                 id: 10,
-                artists: [
+                members: [
                     {
                         name: "周詩涵",
                         title: "",
-                        img_id: 0
                     }
                 ],
                 title: "無題",
@@ -291,11 +302,10 @@ const info_json = {
             },
             {
                 id: 9,
-                artists: [
+                members: [
                     {
                         name: "余宗霖",
                         title: "",
-                        img_id: 0
                     }
                 ],
                 title: "當我們同在一起",
@@ -309,11 +319,10 @@ const info_json = {
             },
             {
                 id: 10,
-                artists: [
+                members: [
                     {
                         name: "許睿智",
                         title: "",
-                        img_id: 0
                     }
                 ],
                 title: "死循環",
@@ -327,11 +336,10 @@ const info_json = {
             },
             {
                 id: 11,
-                artists: [
+                members: [
                     {
                         name: "潘玟瑜",
                         title: "",
-                        img_id: 0
                     }
                 ],
                 title: "Finding",
@@ -345,11 +353,10 @@ const info_json = {
             },
             {
                 id: 12,
-                artists: [
+                members: [
                     {
                         name: "林琮澔",
                         title: "",
-                        img_id: 0
                     }
                 ],
                 title: "Non-stop",
@@ -370,12 +377,10 @@ const info_json = {
                     {
                         name: "徐浩瀚",
                         title: "總召",
-                        img_id: 0
                     },
                     {
                         name: "王嘉郁",
                         title: "副總召",
-                        img_id: 0
                     }
                 ]
             },
@@ -386,12 +391,10 @@ const info_json = {
                     {
                         name: "唐昱翔",
                         title: "文書",
-                        img_id: 0
                     },
                     {
                         name: "白維田",
                         title: "文書",
-                        img_id: 0
                     }
                 ]
             },
@@ -402,7 +405,6 @@ const info_json = {
                     {
                         name: "韓承芯",
                         title: "總務",
-                        img_id: 0
                     }
                 ]
             },
@@ -413,12 +415,10 @@ const info_json = {
                     {
                         name: "劉吉榮",
                         title: "組長",
-                        img_id: 0
                     },
                     {
                         name: "林珈誼",
                         title: "組員",
-                        img_id: 0
                     }
                 ]
             },
@@ -429,42 +429,34 @@ const info_json = {
                     {
                         name: "翁國愷",
                         title: "組長",
-                        img_id: 0
                     },
                     {
                         name: "簡祐呈",
                         title: "影片",
-                        img_id: 0
                     },
                     {
                         name: "陳政維",
                         title: "影片",
-                        img_id: 0
                     },
                     {
                         name: "蔡政澔",
                         title: "文宣",
-                        img_id: 0
                     },
                     {
                         name: "吳佩純",
                         title: "文宣",
-                        img_id: 0
                     },
                     {
                         name: "胡品孜",
                         title: "文宣",
-                        img_id: 0
                     },
                     {
                         name: "廖婉凌",
                         title: "商品",
-                        img_id: 0
                     },
                     {
                         name: "周詩涵",
                         title: "商品",
-                        img_id: 0
                     }
                 ]
             },
@@ -475,32 +467,26 @@ const info_json = {
                     {
                         name: "陳妍姍",
                         title: "組長",
-                        img_id: 0
                     },
                     {
                         name: "林慧儒",
                         title: "贊助",
-                        img_id: 0
                     },
                     {
                         name: "楊茗柯",
                         title: "贊助",
-                        img_id: 0
                     },
                     {
                         name: "李士朋",
                         title: "廣告",
-                        img_id: 0
                     },
                     {
                         name: "余宗霖",
                         title: "廣告",
-                        img_id: 0
                     },
                     {
                         name: "王暉蒽",
                         title: "廣告",
-                        img_id: 0
                     }
                 ]
             },
@@ -511,27 +497,18 @@ const info_json = {
                     {
                         name: "陳誌陽",
                         title: "組長",
-                        img_id: 0
                     },
                     {
                         name: "江愷希",
                         title: "企劃",
-                        img_id: 0
                     },
                     {
                         name: "張珈瑄",
                         title: "企劃",
-                        img_id: 0
-                    },
-                    {
-                        name: "蘇乃俞",
-                        title: "文書",
-                        img_id: 0
                     },
                     {
                         name: "丁常恩",
                         title: "組員",
-                        img_id: 0
                     }
                 ]
             },
@@ -542,32 +519,26 @@ const info_json = {
                     {
                         name: "李頡",
                         title: "組長",
-                        img_id: 0
                     },
                     {
                         name: "高哲淯",
                         title: "組員",
-                        img_id: 0
                     },
                     {
                         name: "蒲欣妤",
                         title: "組員",
-                        img_id: 0
                     },
                     {
                         name: "吳黛葳",
                         title: "組員",
-                        img_id: 0
                     },
                     {
                         name: "朱紹筠",
                         title: "組員",
-                        img_id: 0
                     },
                     {
                         name: "邱傑義",
                         title: "組員",
-                        img_id: 0
                     }
                 ]
             },
@@ -578,22 +549,18 @@ const info_json = {
                     {
                         name: "朱亦萱",
                         title: "組長",
-                        img_id: 0
                     },
                     {
                         name: "潘玟瑜",
                         title: "組員",
-                        img_id: 0
                     },
                     {
                         name: "劉吉榮",
                         title: "組員",
-                        img_id: 0
                     },
                     {
                         name: "蔡尚騰",
                         title: "機動",
-                        img_id: 0
                     }
                 ]
             },
@@ -604,17 +571,14 @@ const info_json = {
                     {
                         name: "莊恩齊",
                         title: "組長",
-                        img_id: 0
                     },
                     {
                         name: "許睿智",
                         title: "組員",
-                        img_id: 0
                     },
                     {
                         name: "林琮澔",
                         title: "組員",
-                        img_id: 0
                     }
                 ]
             },
@@ -625,22 +589,18 @@ const info_json = {
                     {
                         name: "邱傑義",
                         title: "組長",
-                        img_id: 0
                     },
                     {
                         name: "李士朋",
                         title: "組員",
-                        img_id: 0
                     },
                     {
                         name: "林珈誼",
                         title: "組員",
-                        img_id: 0
                     },
                     {
                         name: "劉吉榮",
                         title: "組員",
-                        img_id: 0
                     }
                 ]
             }
@@ -649,9 +609,11 @@ const info_json = {
 }
 
 const language_list = ['zh', 'en'];
+
 // Get Site Language
 const URL_search = new URLSearchParams(window.location.search);
 let site_language = URL_search.get('lang');
+
 // If getting no language from url param, use 'zh'
 if (!language_list.includes(site_language)) site_language = 'zh';
 
