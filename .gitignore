@@ -1,2 +1,3 @@
-/static/images/exhibition/head_photos/png/*
+/src/static/images/exhibition/head_photos/png/*
 .DS_Store
+/

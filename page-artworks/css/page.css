@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "Cubic 11";
+    src: url("./font/Cubic_11_1.013_R.woff") format("woff");
+  }
+
+
+p{
+    padding: 0px;
+    letter-spacing: 0.2em;
+    color: aliceblue;
+    font-size: 14px;
+  }
+
+h1{
+    letter-spacing: 0.3em;
+    color: aliceblue;
+}
+
+h2{
+    letter-spacing: 0.3em;
+    color: aliceblue;
+}
+
+h3{
+    letter-spacing: 0.3em;
+    color: aliceblue;
+    /* box-shadow: 0 1px; padding-bottom:10px; */
+}
+
+.box{
+    width:100px;
+    height:0px;
+    background-color:#ffffff
+}
+
+.box-border{
+    position:relative;
+    left:0px;
+    width:100px;
+    height:0px;
+    border-bottom:1px solid #000;
+}
+
+body{
+    height: 200vh;
+    
+    
+}
+
+html{
+    cursor: url("data:image/svg+xml,%3Csvg height='6' width='6' viewBox='0 0 8 8' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='4' cy='4' fill='%23eee' r='4'/%3E%3C/svg%3E") 3 3, auto;
+}
+
+.text-sns{ 
+    /* box-shadow: 0 2px;
+    padding-bottom:2px; */
+
+    border-bottom:2px #ffffff solid; 
+    padding-bottom:2px;
+
+    padding: 0px;
+    letter-spacing: 0.2em;
+    color: aliceblue;
+    font-size: 14px;
+}
+
+
+  
