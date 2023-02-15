@@ -34,7 +34,7 @@ class Artwork extends HTMLElement {
             members_text += `${member.name} `
             members_photo_HTML += `
             <div class="gallery">
-                <a target="_blank" href="/src/static/images/exhibition/head_photos/jpg/${school_ids[member.name]}.jpg">
+                <a target="_blank" href="/src/images/exhibition/head_photos/jpg/${school_ids[member.name]}.jpg">
                     <face-pic-component class="${school_ids[member.name]}"></face-pic-component> 
                 </a>
                 <div class="overlay" onmouseover="play()">
@@ -62,7 +62,7 @@ class Artwork extends HTMLElement {
             <div>
                 <div class="cursor"></div>
                 <!-- 滑鼠游標音效 -->
-                <audio id="audio" src="/src/static/sfx/mouseOver05.mp3"></audio>
+                <audio id="audio" src="/src/sfx/mouseOver05.mp3"></audio>
 
                 <h1>&nbsp;</h1>
                 <h1><b>${artwork_title}</b></h1>
@@ -104,7 +104,7 @@ class Artwork extends HTMLElement {
 
                 <section id="t04">
                     <h3><span style="color: rgb(0, 255, 221)">▏</span>展場位置圖</h3>
-                    <img src="/src/static/images/exhibition/map/map02.png" style="width: 50%" />
+                    <img src="/src/images/exhibition/map/map02.png" style="width: 50%" />
                     <!-- <section id="t04-01">
                         <h4>壹</h4>
                         <p>…</p>

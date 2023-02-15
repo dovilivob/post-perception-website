@@ -6,12 +6,12 @@ class NavBar extends HTMLElement {
     connectedCallback() {
         const URL_search = new URLSearchParams(window.location.search);
         let lang = URL_search.get('lang') ?? 'zh';
-        let is_en = lang == 'en';
+        let is_en = lang === 'en';
         this.innerHTML = `
             <link rel="stylesheet" href="/src/css/components/navbar.css" />
             <div id="fading-bg"></div>
             <nav>
-              <a href="/home/?lang=${lang}" id="header-title">${is_en ? 'Post-Perception' : '後知後覺後'}</a>
+              <a href="/home/?lang=${lang}" id="header-title" class="no-cursor-effect">${is_en ? 'Post-Perception' : '後知後覺後'}</a>
 
               <input type="checkbox" id="check" />
               <label for="check">
@@ -21,32 +21,34 @@ class NavBar extends HTMLElement {
 
               <ul>
                 <li>
-                    <a href="/home/?lang=${lang}">
+                    <a href="/home/?lang=${lang}" class="no-cursor-effect">
                         ${is_en ? 'home' : '首頁'}
                     </a>
                 </li>
                 <li>
-                    <a href="/about/?lang=${lang}">
+                    <a href="/about/?lang=${lang}" class="no-cursor-effect">
                         ${is_en ? 'about' : '展覽資訊'}
                     </a>
                 </li>
                 <li>
-                    <a href="/members/?lang=${lang}">
+                    <a href="/members/?lang=${lang}" class="no-cursor-effect">
                         ${is_en ? 'members' : '參展人員'}
                     </a>
                 </li>
                 <li>
-                    <a href="/artworks/?lang=${lang}">
+                    <a href="/artworks/?lang=${lang}" class="no-cursor-effect">
                         ${is_en ? 'artworks' : '作品'}
                     </a>
                 </li>
                 <li>
-                    <a href="/record/?lang=${lang}">
+                    <a href="/record/?lang=${lang}" class="no-cursor-effect">
                         ${is_en ? 'record' : '展覽紀錄'}
                     </a>
                 </li>
 
-                ${is_en ? '<li><a href="?lang=zh">中</a></li>' : '<li><a href="?lang=en">En</a></li>'}
+                ${(is_en)
+            ? '<li><a href="?lang=zh" class="no-cursor-effect">中</a></li>'
+            : '<li><a href="?lang=en" class="no-cursor-effect">En</a></li>'}
               </ul>
             </nav>
         `;

@@ -35,28 +35,13 @@ main > nav {
     color: #666;
 }
 
-/** Poor man's reset **/
-* {
-    box-sizing: border-box;
-}
-
-html,
-body {
-    background: #0c0c0c;
-    /* font-family: 'Noto Sans TC', sans-serif; */
-}
-
-body {
-    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; */
-    font-family: "Cubic 11", serif;
-}
-
 ul,
 ol {
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 li {
     margin-left: 1rem;
 }

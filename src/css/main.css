@@ -29,7 +29,7 @@ body {
 
 @font-face {
     font-family: "Cubic 11";
-    src: url("/src/static/fonts/Cubic_11_1.013_R.woff") format("woff");
+    src: url("/src/fonts/Cubic_11_1.013_R.woff") format("woff");
 }
 
 p {

@@ -51,12 +51,13 @@ nav ul li {
 
 nav ul li a {
     position: relative;
-    color: rgb(0, 0, 0); /*Text color*/
+    color: white;
     font-size: 23px;
     padding: 7px 2px; /*線條距離*/
     text-transform: uppercase;
     /*background-color: white;*/
-    color: white;
+    filter: blur(3px);
+    transition: filter .3s ease-in-out;
 }
 
 nav ul li a:before {
@@ -66,10 +67,14 @@ nav ul li a:before {
     bottom: 0;
     height: 2px;
     width: 100%;
-    background: rgb(0, 0, 0); /*Line color*/
+    background: white; /*Line color*/
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.4s ease-in-out;
+}
+
+nav ul li a:hover {
+    filter: blur(0px);
 }
 
 nav ul li a:hover::before {
@@ -86,6 +91,7 @@ label #cancel {
     margin-right: 40px;
     cursor: pointer;
     display: none;
+    font-family: "Font Awesome\ 5 Free", serif;
 }
 
 #check {
@@ -129,9 +135,4 @@ label #cancel {
     #check:checked ~ label #cancel {
         display: block;
     }
-}
-
-@font-face {
-    font-family: "Cubic 11";
-    src: url("/src/static/fonts/Cubic_11_1.013_R.woff") format("woff");
 }

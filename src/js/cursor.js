@@ -23,7 +23,7 @@ $(document).ready(() => {
             const computedState = {}
 
             if (onElement != null) {
-                const { top, left, width, height } = onElement.getBoundingClientRect()
+                const {top, left, width, height} = onElement.getBoundingClientRect()
                 const radius = window.getComputedStyle(onElement).borderTopLeftRadius
 
                 computedState.x = left + width / 2
@@ -45,13 +45,16 @@ $(document).ready(() => {
         })
 
         document.querySelectorAll('a, button').forEach(elem => {
-            elem.addEventListener('mouseenter', () => (onElement = elem))
-            elem.addEventListener('mouseleave', () => (onElement = undefined))
+            if (!elem.classList.contains('no-cursor-effect')) {
+                elem.addEventListener('mouseenter', () => (onElement = elem))
+                elem.addEventListener('mouseleave', () => (onElement = undefined))
+            }
         })
 
     })
 
 })
+
 // Hover音效
 function play() {
     var audio = document.getElementById("audio");

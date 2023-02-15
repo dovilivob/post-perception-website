@@ -15,7 +15,7 @@ class FacePic extends HTMLElement {
                 #image-${image_id}-container {
                     width: 100%;
                     height: 40vh;
-                    background-image: url('/src/static/images/exhibition/head_photos/jpg/${image_id}.jpg');
+                    background-image: url('/src/images/exhibition/head_photos/jpg/${image_id}.jpg');
                     background-position: center center;
                     background-repeat: no-repeat;
                     background-size: cover;

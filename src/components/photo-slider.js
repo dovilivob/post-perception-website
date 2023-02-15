@@ -14,19 +14,19 @@ class PhotoSlider extends HTMLElement {
             <div class="slideshow-container">
                 <div class="mySlides fade">
                     <div class="numbertext">1 / 3</div>
-                    <img src="/src/static/images/exhibition/artwork_photos/01.jpg" style="width: 100%" />
+                    <img src="/src/images/exhibition/artwork_photos/0/1.jpg" style="width: 100%" />
                     <div class="text"><i>作品圖片備註 - 01</i></div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">2 / 3</div>
-                    <img src="/src/static/images/exhibition/artwork_photos/02.jpg" style="width: 100%" />
+                    <img src="/src/images/exhibition/artwork_photos/0/2.jpg" style="width: 100%" />
                     <div class="text"><i>作品圖片備註 - 02</i></div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">3 / 3</div>
-                    <img src="/src/static/images/exhibition/artwork_photos/03.jpg" style="width: 100%" />
+                    <img src="/src/images/exhibition/artwork_photos/0/3.jpg" style="width: 100%" />
                     <div class="text"><i>作品圖片備註 - 03</i></div>
                 </div>
 

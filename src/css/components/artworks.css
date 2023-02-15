@@ -1,12 +1,25 @@
 .teams-container {
-  text-align: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px;
+    justify-content: center;
 }
 
 .team-name {
-  color: white;
-  font-size: 40px;
+    width: 40vw;
+    color: white;
+    font-size: 30px;
+    filter: blur(5px);
+    padding: 30px;
+    transition: all .3s ease-in-out;
+}
+
+.team-name:hover {
+    filter: blur(0px);
+    font-size: 40px;
 }
 
 .team-container {
-  padding: 1rem;
+    padding: 1rem;
 }
