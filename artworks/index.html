@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>ARTWORK</title>
-        <link rel="stylesheet" href="/src/css/main.css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    </head>
-    <body>
-        <navbar-component class="language-changeable"></navbar-component>
-        <main></main>
-        <script>
-            const URL_search = new URLSearchParams(window.location.search);
-            const artwork_id = parseInt(URL_search.get("id"));
-            const have_id = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].includes(artwork_id);
-            if (have_id) {
-                const artwork = document.createElement("artwork-component");
-                artwork.className = `language-changeable ${artwork_id}`;
-                document.querySelector("main").appendChild(artwork);
-            } else {
-                const artworks = document.createElement("list-all-artworks");
-                document.querySelector("main").appendChild(artworks);
-            }
-        </script>
-        <script src="/src/components/navbar.js"></script>
-        <script src="/src/components/head_photo.js" type="module"></script>
-        <script src="/src/components/artwork.js" type="module"></script>
-        <script src="/src/components/artworks.js" type="module"></script>
-    </body>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>ARTWORK</title>
+    <link rel="stylesheet" href="/src/css/main.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/src/css/cursor.css"/>
+</head>
+<body>
+<navbar-component class="language-changeable"></navbar-component>
+<main></main>
+<script>
+    const URL_search = new URLSearchParams(window.location.search);
+    const artwork_id = parseInt(URL_search.get("id"));
+    const have_id = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].includes(artwork_id);
+    if (have_id) {
+        const artwork = document.createElement("artwork-component");
+        artwork.className = `language-changeable ${artwork_id}`;
+        document.querySelector("main").appendChild(artwork);
+    } else {
+        const artworks = document.createElement("list-all-artworks");
+        document.querySelector("main").appendChild(artworks);
+    }
+</script>
+</body>
+<script src="/src/components/navbar.js"></script>
+<script src="/src/components/face-pic.js" type="module"></script>
+<script src="/src/components/photo-slider.js" type="module"></script>
+<script src="/src/components/artwork.js" type="module"></script>
+<script src="/src/components/artworks.js" type="module"></script>
+<script src="/src/js/photo-slider.js"></script>
+<!-- 右側摘要功能 -->
+<script src="/src/js/table-of-contents.js"></script>
+<!-- 滑鼠游標、音效事件 -->
+<script src="/src/js/cursor.js"></script>
 </html>

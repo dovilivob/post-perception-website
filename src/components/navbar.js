@@ -1,4 +1,3 @@
-
 class NavBar extends HTMLElement {
     constructor() {
         super();
@@ -9,7 +8,7 @@ class NavBar extends HTMLElement {
         let lang = URL_search.get('lang') ?? 'zh';
         let is_en = lang == 'en';
         this.innerHTML = `
-            <link rel="stylesheet" href="/src/css/navbar.css" />
+            <link rel="stylesheet" href="/src/css/components/navbar.css" />
             <div id="fading-bg"></div>
             <nav>
               <a href="/home/?lang=${lang}" id="header-title">${is_en ? 'Post-Perception' : '後知後覺後'}</a>

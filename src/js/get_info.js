@@ -68,11 +68,15 @@ const info_json = {
                 ],
                 title: "弗朗提爾貳號",
                 subtitle: "",
+                format: "錄像裝置",
                 description: "21世紀以降，互聯網已然發展成與現實相互糾纏的鏡像世界，使用介面的演進，大大加速了這一進程，太空殖民的時代尚未到來，互聯網可能先一步成為近未來的殖民地。本作接續其前作 FRONTIER_01，以不同比例的手機頻幕，播放三個月展期以來所累積的數千筆，觀眾所提供的圖文資料，並使用這些資料建設一座龐雜卻有序的環形太空站。身處世界各地的人們，不約而同地透過某種介面登上了這座太空站，共構出現今的互聯網生態，持續開拓 The Next Frontier。",
-                media: ["", ""],
+                media: "網路程式運算影像, 彩⾊/有聲, 即時影像無固定時常",
+                size: "200cm x 200cm x 200cm",
                 record: {
                     images: [0, 1],
-                    videos: [0, 1]
+                    videos: {
+                        youtube: "91JGyan6MY8"
+                    },
                 }
             },
             {
@@ -104,10 +108,10 @@ const info_json = {
                     }
                 ],
                 title: "展間．魅影",
-                subtitle: "",
+                subtitle: "", format: "",
                 description: "",
-                media: ["", ""],
-                record: {
+                media: "",
+                size: "", record: {
                     images: [0, 1],
                     videos: [0, 1]
                 }
@@ -137,10 +141,10 @@ const info_json = {
                     }
                 ],
                 title: "無題",
-                subtitle: "",
+                subtitle: "", format: "",
                 description: "",
-                media: ["", ""],
-                record: {
+                media: "",
+                size: "", record: {
                     images: [0, 1],
                     videos: [0, 1]
                 }
@@ -174,10 +178,10 @@ const info_json = {
                     }
                 ],
                 title: "!Virtual",
-                subtitle: "",
+                subtitle: "", format: "",
                 description: "",
-                media: ["", ""],
-                record: {
+                media: "",
+                size: "", record: {
                     images: [0, 1],
                     videos: [0, 1]
                 }
@@ -195,10 +199,10 @@ const info_json = {
                     }
                 ],
                 title: "定急",
-                subtitle: "",
+                subtitle: "", format: "",
                 description: "",
-                media: ["", ""],
-                record: {
+                media: "",
+                size: "", record: {
                     images: [0, 1],
                     videos: [0, 1]
                 }
@@ -229,10 +233,10 @@ const info_json = {
                     }
                 ],
                 title: "夢尼瑪",
-                subtitle: "",
+                subtitle: "", format: "",
                 description: "",
-                media: ["", ""],
-                record: {
+                media: "",
+                size: "", record: {
                     images: [0, 1],
                     videos: [0, 1]
                 }
@@ -254,10 +258,10 @@ const info_json = {
                     }
                 ],
                 title: "呼吸＿集",
-                subtitle: "",
+                subtitle: "", format: "",
                 description: "",
-                media: ["", ""],
-                record: {
+                media: "",
+                size: "", record: {
                     images: [0, 1],
                     videos: [0, 1]
                 }
@@ -275,10 +279,10 @@ const info_json = {
                     }
                 ],
                 title: "燈火闌珊處",
-                subtitle: "",
+                subtitle: "", format: "",
                 description: "",
-                media: ["", ""],
-                record: {
+                media: "",
+                size: "", record: {
                     images: [0, 1],
                     videos: [0, 1]
                 }
@@ -292,10 +296,10 @@ const info_json = {
                     }
                 ],
                 title: "無題",
-                subtitle: "",
+                subtitle: "", format: "",
                 description: "",
-                media: ["", ""],
-                record: {
+                media: "",
+                size: "", record: {
                     images: [0, 1],
                     videos: [0, 1]
                 }
@@ -309,10 +313,10 @@ const info_json = {
                     }
                 ],
                 title: "當我們同在一起",
-                subtitle: "",
+                subtitle: "", format: "",
                 description: "",
-                media: ["", ""],
-                record: {
+                media: "",
+                size: "", record: {
                     images: [0, 1],
                     videos: [0, 1]
                 }
@@ -326,10 +330,10 @@ const info_json = {
                     }
                 ],
                 title: "死循環",
-                subtitle: "",
+                subtitle: "", format: "",
                 description: "",
-                media: ["", ""],
-                record: {
+                media: "",
+                size: "", record: {
                     images: [0, 1],
                     videos: [0, 1]
                 }
@@ -343,10 +347,10 @@ const info_json = {
                     }
                 ],
                 title: "Finding",
-                subtitle: "",
+                subtitle: "", format: "",
                 description: "",
-                media: ["", ""],
-                record: {
+                media: "",
+                size: "", record: {
                     images: [0, 1],
                     videos: [0, 1]
                 }
@@ -360,9 +364,10 @@ const info_json = {
                     }
                 ],
                 title: "Non-stop",
-                subtitle: "",
+                subtitle: "", format: "",
                 description: "",
-                media: ["", ""],
+                media: "",
+                size: "",
                 record: {
                     images: [0, 1],
                     videos: [0, 1]

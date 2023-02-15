@@ -15,7 +15,7 @@ class Artworks extends HTMLElement {
             `
         }
         this.innerHTML = `
-            <link rel="stylesheet" href="/css/artworks.css" />
+            <link rel="stylesheet" href="/src/css/components/artworks.css" />
             <div class="teams-container">
                 ${teams}
             </div>
